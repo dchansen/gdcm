@@ -3609,6 +3609,50 @@ Manual changes:
     <entry group="fffe" element="e000" keyword="Item" vm="1" name="Item"/>
     <entry group="fffe" element="e00d" keyword="ItemDelimitationItem" vm="1" name="Item Delimitation Item"/>
     <entry group="fffe" element="e0dd" keyword="SequenceDelimitationItem" vm="1" name="Sequence Delimitation Item"/>
+<entry group="0018" element="0061" owner="DICOM-CT-PD" vr="DS" vm="1" name="HUCalibrationFactor"/>
+<entry group="0400" element="0315" owner="DICOM-CT-PD" vr="FL" vm="1" name="Timestamp"/>
+<entry group="5400" element="1011" owner="DICOM-CT-PD" vr="FL" vm="1" name="WaveformDataPoint"/>
+<entry group="7029" element="0010" owner="DICOM-CT-PD" vr="LO" vm="1" name="DetectorSystemArrangementModule"/>
+<entry group="7029" element="1010" owner="DICOM-CT-PD" vr="US" vm="1" name="NumberOfDetectorRows"/>
+<entry group="7029" element="1011" owner="DICOM-CT-PD" vr="US" vm="1" name="NumberOfDetectorColumns"/>
+<entry group="7029" element="1002" owner="DICOM-CT-PD" vr="FL" vm="1" name="DetectorElementTransverseSpacing"/>
+<entry group="7029" element="1006" owner="DICOM-CT-PD" vr="FL" vm="1" name="DetectorElementAxialSpacing"/>
+<entry group="7029" element="100B" owner="DICOM-CT-PD" vr="CS" vm="1" name="DetectorShape"/>
+<entry group="7031" element="0010" owner="DICOM-CT-PD" vr="LO" vm="1" name="DetectorDynamicsModule"/>
+<entry group="7031" element="1001" owner="DICOM-CT-PD" vr="FL" vm="1" name="DetectorFocalCenterAngularPosition"/>
+<entry group="7031" element="1002" owner="DICOM-CT-PD" vr="FL" vm="1" name="DetectorFocalCenterAxialPosition"/>
+<entry group="7031" element="1003" owner="DICOM-CT-PD" vr="FL" vm="1" name="DetectorFocalCenterRadialDistance"/>
+<entry group="7031" element="1031" owner="DICOM-CT-PD" vr="FL" vm="1" name="ConstantRadialDistance"/>
+<entry group="7031" element="1033" owner="DICOM-CT-PD" vr="FL" vm="1-n" name="DetectorCentralElement"/>
+<entry group="7033" element="0010" owner="DICOM-CT-PD" vr="LO" vm="1" name="SourceDynamicsModule"/>
+<entry group="7033" element="100B" owner="DICOM-CT-PD" vr="FL" vm="1" name="SourceAngularPositionShift"/>
+<entry group="7033" element="100C" owner="DICOM-CT-PD" vr="FL" vm="1" name="SourceAxialPositionShift"/>
+<entry group="7033" element="100D" owner="DICOM-CT-PD" vr="FL" vm="1" name="SourceRadialDistanceShift"/>
+<entry group="7033" element="100E" owner="DICOM-CT-PD" vr="CS" vm="1" name="FlyingFocalSpotMode"/>
+<entry group="7033" element="1013" owner="DICOM-CT-PD" vr="US" vm="1" name="NumberofSourceAngularSteps"/>
+<entry group="7033" element="1061" owner="DICOM-CT-PD" vr="US" vm="1" name="NumberofSources"/>
+<entry group="7033" element="1063" owner="DICOM-CT-PD" vr="US" vm="1" name="SourceIndex"/>
+<entry group="7033" element="1065" owner="DICOM-CT-PD" vr="FL" vm="1-n" name="PhotonStatistics"/>
+<entry group="7037" element="0010" owner="DICOM-CT-PD" vr="LO" vm="1" name="ProjectionDataDefinitions"/>
+<entry group="7037" element="1009" owner="DICOM-CT-PD" vr="CS" vm="1" name="TypeofProjectionData"/>
+<entry group="7037" element="100A" owner="DICOM-CT-PD" vr="CS" vm="1" name="TypeofProjectionGeometry"/>
+<entry group="7039" element="0010" owner="DICOM-CT-PD" vr="LO" vm="1" name="PreprocessingFlagsModule"/>
+<entry group="7039" element="1003" owner="DICOM-CT-PD" vr="CS" vm="1" name="BeamHardeningCorrectionFlag"/>
+<entry group="7039" element="1004" owner="DICOM-CT-PD" vr="CS" vm="1" name="GainCorrectionFlag"/>
+<entry group="7039" element="1005" owner="DICOM-CT-PD" vr="CS" vm="1" name="DarkFieldCorrectionFlag"/>
+<entry group="7039" element="1006" owner="DICOM-CT-PD" vr="CS" vm="1" name="FlatFieldCorrectionFlag"/>
+<entry group="7039" element="1007" owner="DICOM-CT-PD" vr="CS" vm="1" name="BadPixelCorrectionFlag"/>
+<entry group="7039" element="1008" owner="DICOM-CT-PD" vr="CS" vm="1" name="ScatterCorrectionFlag"/>
+<entry group="7039" element="1009" owner="DICOM-CT-PD" vr="CS" vm="1" name="LogFlag"/>
+<entry group="7041" element="0010" owner="DICOM-CT-PD" vr="LO" vm="1" name="LesionInformationModule"/>
+<entry group="7041" element="1003" owner="DICOM-CT-PD" vr="US" vm="1" name="NumberOfLesions"/>
+<entry group="7041" element="1004" owner="DICOM-CT-PD" vr="ST" vm="1" name="LesionPathologyArray"/>
+<entry group="7041" element="1005" owner="DICOM-CT-PD" vr="FL" vm="1-n" name="LesionAngularPositionArray"/>
+<entry group="7041" element="1006" owner="DICOM-CT-PD" vr="FL" vm="1-n" name="LesionAxialPositionArray"/>
+<entry group="7041" element="1007" owner="DICOM-CT-PD" vr="FL" vm="1-n" name="LesionRadialDistanceArray"/>
+
+
+
   </dict>
   <dict ref="7" name="Registry of DICOM File Meta Elements">
     <entry group="0002" element="0000" keyword="FileMetaInformationGroupLength" vr="UL" vm="1" name="File Meta Information Group Length"/>
@@ -4003,5 +4047,6 @@ Manual changes:
     <uid value="1.2.840.10008.1.4.1.18" name="SPM2 SINGLESUBJT1 Frame of Reference" normative-reference="SPM2 /canonical/single_subj_T1.mnc"/>
     <uid value="1.2.840.10008.1.4.2.1" name="ICBM 452 T1 Frame of Reference" normative-reference="ICBM452 T1 Atlas"/>
     <uid value="1.2.840.10008.1.4.2.2" name="ICBM Single Subject MRI Frame of Reference" normative-reference="ICBM Single Subject MRI Anatomical Template"/>
+
   </table>
 </dicts>

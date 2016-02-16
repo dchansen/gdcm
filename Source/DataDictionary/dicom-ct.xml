@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="priv2html.xsl"?><!-- The whole file was generated using :
+
+ $ find /path/to/dicom/files -type f -exec gdcmdump {} -d \; > dict.xml
+
+-->
+<!--
+  Program: GDCM (Grassroots DICOM). A DICOM library
+
+  Copyright (c) 2006-2011 Mathieu Malaterre
+  All rights reserved.
+  See Copyright.txt or http://gdcm.sourceforge.net/Copyright.html for details.
+
+     This software is distributed WITHOUT ANY WARRANTY; without even
+     the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+     PURPOSE.  See the above copyright notice for more information.
+-->
+<dict edition="2007" ref="http://www.medical.siemens.com/siemens/sv_SE/rg_marcom_FBAs/files/brochures/DICOM/ct/C2-028.610.04.01.02_DICOM_VA11.pdf">
+<!--Tag                 Private Owner Code                     Name                      VR         VM-->
+<!--
+<entry group="0008" element="0016" owner="DICOM-CT-PD" vr="UI" vm="1" name="SOPClassUID"/>
+<entry group="0008" element="0060" owner="DICOM-CT-PD" vr="CS" vm="1" name="Modality"/>
+<entry group="0008" element="0070" owner="DICOM-CT-PD" vr="LO" vm="1" name="Manufacturer"/>
+-->
+
+<entry group="0018" element="0015" owner="DICOM-CT-PD" vr="CS" vm="1" name="BodyPartExamined"/>
+<entry group="0018" element="0060" owner="DICOM-CT-PD" vr="DS" vm="1" name="KVP"/>
+<entry group="0018" element="0061" owner="DICOM-CT-PD" vr="DS" vm="1" name="HUCalibrationFactor"/>
+<entry group="0018" element="0090" owner="DICOM-CT-PD" vr="DS" vm="1" name="DataCollectionDiameter"/>
+<entry group="0018" element="1030" owner="DICOM-CT-PD" vr="LO" vm="1" name="ProtocolName"/>
+<entry group="0018" element="1048" owner="DICOM-CT-PD" vr="CS" vm="1" name="ContrastBolusIngredient"/>
+<entry group="0018" element="1150" owner="DICOM-CT-PD" vr="IS" vm="1" name="ExposureTime"/>
+<entry group="0018" element="1151" owner="DICOM-CT-PD" vr="IS" vm="1" name="XrayTubeCurrent"/>
+<entry group="0018" element="9311" owner="DICOM-CT-PD" vr="FD" vm="1" name="SpiralPitchFactor"/>
+<entry group="0020" element="000D" owner="DICOM-CT-PD" vr="UI" vm="1" name="StudyInstanceUID"/>
+<entry group="0020" element="000E" owner="DICOM-CT-PD" vr="UI" vm="1" name="SeriesInstanceUID"/>
+<entry group="0020" element="0011" owner="DICOM-CT-PD" vr="IS" vm="1" name="SeriesNumber"/>
+<entry group="0020" element="0013" owner="DICOM-CT-PD" vr="IS" vm="1" name="InstanceNumber"/>
+<entry group="0028" element="1052" owner="DICOM-CT-PD" vr="DS" vm="1" name="RescaleIntercept"/>
+<entry group="0028" element="1053" owner="DICOM-CT-PD" vr="DS" vm="1" name="RescaleSlope"/>
+<entry group="0400" element="0315" owner="DICOM-CT-PD" vr="FL" vm="1" name="Timestamp"/>
+<entry group="5400" element="1011" owner="DICOM-CT-PD" vr="FL" vm="1" name="WaveformDataPoint"/>
+<entry group="7029" element="0010" owner="DICOM-CT-PD" vr="LO" vm="1" name="DetectorSystemArrangementModule"/>
+<entry group="7029" element="1010" owner="DICOM-CT-PD" vr="US" vm="1" name="NumberOfDetectorRows"/>
+<entry group="7029" element="1011" owner="DICOM-CT-PD" vr="US" vm="1" name="NumberOfDetectorColumns"/>
+<entry group="7029" element="1002" owner="DICOM-CT-PD" vr="FL" vm="1" name="DetectorElementTransverseSpacing"/>
+<entry group="7029" element="1006" owner="DICOM-CT-PD" vr="FL" vm="1" name="DetectorElementAxialSpacing"/>
+<entry group="7029" element="100B" owner="DICOM-CT-PD" vr="CS" vm="1" name="DetectorShape"/>
+<entry group="7031" element="0010" owner="DICOM-CT-PD" vr="LO" vm="1" name="DetectorDynamicsModule"/>
+<entry group="7031" element="1001" owner="DICOM-CT-PD" vr="FL" vm="1" name="DetectorFocalCenterAngularPosition"/>
+<entry group="7031" element="1002" owner="DICOM-CT-PD" vr="FL" vm="1" name="DetectorFocalCenterAxialPosition"/>
+<entry group="7031" element="1003" owner="DICOM-CT-PD" vr="FL" vm="1" name="DetectorFocalCenterRadialDistance"/>
+<entry group="7031" element="1031" owner="DICOM-CT-PD" vr="FL" vm="1" name="ConstantRadialDistance"/>
+<entry group="7031" element="1033" owner="DICOM-CT-PD" vr="FL" vm="1-n" name="DetectorCentralElement"/>
+<entry group="7033" element="0010" owner="DICOM-CT-PD" vr="LO" vm="1" name="SourceDynamicsModule"/>
+<entry group="7033" element="100B" owner="DICOM-CT-PD" vr="FL" vm="1" name="SourceAngularPositionShift"/>
+<entry group="7033" element="100C" owner="DICOM-CT-PD" vr="FL" vm="1" name="SourceAxialPositionShift"/>
+<entry group="7033" element="100D" owner="DICOM-CT-PD" vr="FL" vm="1" name="SourceRadialDistanceShift"/>
+<entry group="7033" element="100E" owner="DICOM-CT-PD" vr="CS" vm="1" name="FlyingFocalSpotMode"/>
+<entry group="7033" element="1013" owner="DICOM-CT-PD" vr="US" vm="1" name="NumberofSourceAngularSteps"/>
+<entry group="7033" element="1061" owner="DICOM-CT-PD" vr="US" vm="1" name="NumberofSources"/>
+<entry group="7033" element="1063" owner="DICOM-CT-PD" vr="US" vm="1" name="SourceIndex"/>
+<entry group="7033" element="1065" owner="DICOM-CT-PD" vr="FL" vm="1-n" name="PhotonStatistics"/>
+<entry group="7037" element="0010" owner="DICOM-CT-PD" vr="LO" vm="1" name="ProjectionDataDefinitions"/>
+<entry group="7037" element="1009" owner="DICOM-CT-PD" vr="CS" vm="1" name="TypeofProjectionData"/>
+<entry group="7037" element="100A" owner="DICOM-CT-PD" vr="CS" vm="1" name="TypeofProjectionGeometry"/>
+<entry group="7039" element="0010" owner="DICOM-CT-PD" vr="LO" vm="1" name="PreprocessingFlagsModule"/>
+<entry group="7039" element="1003" owner="DICOM-CT-PD" vr="CS" vm="1" name="BeamHardeningCorrectionFlag"/>
+<entry group="7039" element="1004" owner="DICOM-CT-PD" vr="CS" vm="1" name="GainCorrectionFlag"/>
+<entry group="7039" element="1005" owner="DICOM-CT-PD" vr="CS" vm="1" name="DarkFieldCorrectionFlag"/>
+<entry group="7039" element="1006" owner="DICOM-CT-PD" vr="CS" vm="1" name="FlatFieldCorrectionFlag"/>
+<entry group="7039" element="1007" owner="DICOM-CT-PD" vr="CS" vm="1" name="BadPixelCorrectionFlag"/>
+<entry group="7039" element="1008" owner="DICOM-CT-PD" vr="CS" vm="1" name="ScatterCorrectionFlag"/>
+<entry group="7039" element="1009" owner="DICOM-CT-PD" vr="CS" vm="1" name="LogFlag"/>
+<entry group="7041" element="0010" owner="DICOM-CT-PD" vr="LO" vm="1" name="LesionInformationModule"/>
+<entry group="7041" element="1003" owner="DICOM-CT-PD" vr="US" vm="1" name="NumberOfLesions"/>
+<entry group="7041" element="1004" owner="DICOM-CT-PD" vr="ST" vm="1" name="LesionPathologyArray"/>
+<entry group="7041" element="1005" owner="DICOM-CT-PD" vr="FL" vm="1-n" name="LesionAngularPositionArray"/>
+<entry group="7041" element="1006" owner="DICOM-CT-PD" vr="FL" vm="1-n" name="LesionAxialPositionArray"/>
+<entry group="7041" element="1007" owner="DICOM-CT-PD" vr="FL" vm="1-n" name="LesionRadialDistanceArray"/>
+
+
+
+</dict>

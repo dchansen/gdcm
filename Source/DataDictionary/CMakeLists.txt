@@ -115,6 +115,7 @@ set(XML_FILES
   ${CMAKE_CURRENT_SOURCE_DIR}/Part7.xml
   ${CMAKE_CURRENT_SOURCE_DIR}/UIDs.xml
   ${CMAKE_CURRENT_SOURCE_DIR}/cp699.xml
+  ${CMAKE_CURRENT_SOURCE_DIR}/dicom-ct.xml
   )
 
 set_source_files_properties(

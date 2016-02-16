@@ -85,7 +85,7 @@ if(WIN32 AND NOT CYGWIN)
   subdirs(getopt)
 endif()
 
-subdirs(doxygen)
+#subdirs(doxygen)
 
 # you could be running mingw32 on linux in which case you do NOT want the gdcmuuid lib
 APPEND_COPYRIGHT(${CMAKE_CURRENT_SOURCE_DIR}/gdcmuuid/COPYING)
